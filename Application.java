@@ -14,7 +14,7 @@ public class ChatbotController {
 
     @PostMapping("/chat")
     public Response chat(@RequestBody UserInput userInput) {
-        // Implement basic AI logic here
+        // Implement AI or logic here
         String userMessage = userInput.getMessage();
         String botResponse = "You said: " + userMessage; // Simple echo response for now
         return new Response(botResponse);
